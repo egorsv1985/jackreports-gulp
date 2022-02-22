@@ -1,4 +1,8 @@
 const ctx = document.getElementById('graph_activation');
+Chart.defaults.font.size = 18;
+// Chart.defaults.global.defaultFontSize = 18;
+// сhart.defaults.plugins.legend.display = false;
+Chart.defaults.plugins.legend.d
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -33,6 +37,19 @@ const myChart = new Chart(ctx, {
         ],
 
     },
+    options: {
+        plugins: {
+            legend: {
+                display: false,
+                labels: {
+                    // This more specific font property overrides the global property
+                    font: {
+                        size: 16
+                    }
+                }
+            }
+        }
+    },
 });
 
 
@@ -55,4 +72,53 @@ let chart = new Chart(ctx2, {
             }
         ],
     },
+    options: {
+        plugins: {
+            legend: {
+                display: false,
+
+                labels: {
+                    // This more specific font property overrides the global property
+                    font: {
+                        size: 16
+                    }
+                }
+            }
+        },
+
+
+    },
 });
+
+// var popCanvas = document.getElementById("popChart");
+
+// Chart.defaults.global.defaultFontFamily = "Lato";
+// Chart.defaults.global.defaultFontSize = 18;
+// Chart.defaults.global.defaultFontColor = 'blue';
+
+// var barChart = new Chart(popCanvas, {
+//   type: 'bar',
+//   data: {
+//     labels: ["China", "India", "United States", "Indonesia", "Brazil", "Pakistan", "Nigeria", "Bangladesh", "Russia", "Japan"],
+//     datasets: [{
+//       label: 'Population',
+//       data: [1379302771, 1281935911, 326625791, 260580739, 207353391, 204924861, 190632261, 157826578, 142257519, 126451398],
+//       backgroundColor: [
+//         'rgba(255, 99, 132, 0.6)',
+//         'rgba(54, 162, 235, 0.6)',
+//         'rgba(255, 206, 86, 0.6)',
+//         'rgba(75, 192, 192, 0.6)',
+//         'rgba(153, 102, 255, 0.6)',
+//         'rgba(255, 159, 64, 0.6)',
+//         'rgba(255, 99, 132, 0.6)',
+//         'rgba(54, 162, 235, 0.6)',
+//         'rgba(255, 206, 86, 0.6)',
+//         'rgba(75, 192, 192, 0.6)',
+//         'rgba(153, 102, 255, 0.6)'
+//       ]
+//     }]
+//   },
+//   options: {
+
+//   }
+// });
