@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 /*Обнуление*/
-
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +9,7 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -95,14 +94,13 @@ button {
 }
 
 /*--------------------*/
-
 body {
   font-family: "Poppins";
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 120px;
+  padding: 0 242px;
   max-width: 1440px;
 }
 
