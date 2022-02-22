@@ -101,9 +101,11 @@ body {
 
 .container {
 	margin: 0 auto;
-	padding: 0 242px;
-	max-width: 1440px;
+	padding: 0 120px;
+	max-width: 1200px;
 }
+
+
 
 .text--yellow {
 	color: #E57200 !important;
@@ -178,4 +180,25 @@ tbody .metrics__table-row:last-child th::before {
 #graph_retention {
 	margin-top: 40px;
 	max-height: 380px;
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+
+		padding: 0 15px;
+		max-width: 100%;
+	}
+
+	.metrics__title {
+		font-size: 30px;
+		line-height: 45px;
+
+	}
+
+	.metrics__table-row th,
+	.metrics__table-row td {
+		font-size: 16px;
+
+	}
+
 }

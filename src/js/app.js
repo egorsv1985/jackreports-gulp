@@ -42,10 +42,8 @@ const myChart = new Chart(ctx, {
             legend: {
                 display: false,
                 labels: {
-                    // This more specific font property overrides the global property
-                    font: {
-                        size: 16
-                    }
+                    fontSize: window.innerWidth > 767 ? 18 : 16
+
                 }
             }
         }
@@ -78,10 +76,8 @@ let chart = new Chart(ctx2, {
                 display: false,
 
                 labels: {
-                    // This more specific font property overrides the global property
-                    font: {
-                        size: 16
-                    }
+                    fontSize: window.innerWidth > 767 ? 18 : 16
+
                 }
             }
         },
