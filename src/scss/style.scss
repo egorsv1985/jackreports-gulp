@@ -154,6 +154,7 @@ body {
 
 .metrics__table-row th:first-child {
 	padding-left: 32px;
+	position: relative;
 }
 
 tbody .metrics__table-row:first-child th::before {
@@ -164,6 +165,10 @@ tbody .metrics__table-row:first-child th::before {
 	background-color: #0073FF;
 	left: 0;
 	top: 20px;
+}
+
+tbody .metrics__table-row:last-child {
+	position: relative;
 }
 
 tbody .metrics__table-row:last-child th::before {

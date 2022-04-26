@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 /*Обнуление*/
-
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +9,7 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -95,7 +94,6 @@ button {
 }
 
 /*--------------------*/
-
 body {
   font-family: "Poppins";
 }
@@ -153,6 +151,7 @@ body {
 
 .metrics__table-row th:first-child {
   padding-left: 32px;
+  position: relative;
 }
 
 tbody .metrics__table-row:first-child th::before {
@@ -163,6 +162,10 @@ tbody .metrics__table-row:first-child th::before {
   background-color: #0073FF;
   left: 0;
   top: 20px;
+}
+
+tbody .metrics__table-row:last-child {
+  position: relative;
 }
 
 tbody .metrics__table-row:last-child th::before {
@@ -193,7 +196,7 @@ tbody .metrics__table-row:last-child th::before {
   }
 
   .metrics__table-row th,
-  .metrics__table-row td {
+.metrics__table-row td {
     font-size: 16px;
   }
 }
